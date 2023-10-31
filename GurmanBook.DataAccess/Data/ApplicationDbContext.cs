@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GurmanBooksStore.Data
+namespace GurmanBooksStore.DataAccess.Data //modify namspace to reflect the project
 {
     public class ApplicationDbContext : IdentityDbContext
     {
