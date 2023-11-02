@@ -63,7 +63,7 @@ namespace GurmanBooksStore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area:Customer}/{controller=Home}/{action=Index}/{id?}"); //modify pattern by adding customer area  
+                    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
