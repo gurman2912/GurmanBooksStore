@@ -1,4 +1,5 @@
 ﻿using GurmanBooksStore.Models.ViewModels;
+using GurmanBooksStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GurmanBooksStore.Controllers
+namespace GurmanBooksStore.Area.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
