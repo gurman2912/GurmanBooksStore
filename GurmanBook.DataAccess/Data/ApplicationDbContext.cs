@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using GurmanBooksStore.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,8 @@ namespace GurmanBooksStore.DataAccess.Data //modify namspace to reflect the proj
             : base(options)
         {
         }
+
+        public DbSet<Category> Categories { get; set; }
+
     }
 }
