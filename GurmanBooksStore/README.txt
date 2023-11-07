@@ -202,3 +202,9 @@ delete and start again UnitOfWork.cs class and interface.........bacause i had p
 Start part 2.3
 1041
 create a CategoryController in Areas>Admin>Controller and modify it.......
+
+1059
+add index view html file in Areas/View and modify with generic code which is provided by you in the Assignment2- files folder name as Category Index View.txt.....
+then link into layout page.........commented out privacy link........
+run the application to see the output........okk!!!!
+
