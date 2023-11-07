@@ -56,7 +56,7 @@ namespace GurmanBook.DataAccess.Repository
                 var item1 = result.Read<T1>().ToList(); //make sure to add using statemeent for Linq
                 var item2 = result.Read<T2>().ToList();
 
-                if(item1 != null && item2 != null)
+                if (item1 != null && item2 != null)
                 {
                     return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(item1, item2);
                 }
