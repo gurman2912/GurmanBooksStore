@@ -197,5 +197,7 @@ add UnitOfWork.cs class to Repository and implement the interface.....
 
 2023-11-07
 1006
- delete and start again UnitOfWork.cs class and interface.........bacause i had problems with the name of files in Startup.cs page, I wrote wrong name of class and interface
+delete and start again UnitOfWork.cs class and interface.........bacause i had problems with the name of files in Startup.cs page, I wrote wrong name of class and interface
+
+Start part 2.3
 
