@@ -1,4 +1,5 @@
-﻿using GurmanBook.DataAccess.Repository.IRepository;
+﻿using GurmanBooks.Models;
+using GurmanBook.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,23 @@ namespace GurmanBooksStore.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult Upsert(int? id)  //action method for upsert
+        {
+            Category category = new Category();   //using GurmanBooks.Models
+            if(id == null)
+            {
+                //this is for create
+                return View(category);
+            }
+            //this for the edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if(category == null)
+            {
+                return NotFound();
+            }
             return View();
         }
 
