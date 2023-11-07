@@ -200,4 +200,5 @@ add UnitOfWork.cs class to Repository and implement the interface.....
 delete and start again UnitOfWork.cs class and interface.........bacause i had problems with the name of files in Startup.cs page, I wrote wrong name of class and interface
 
 Start part 2.3
-
+1041
+create a CategoryController in Areas>Admin>Controller and modify it.......
