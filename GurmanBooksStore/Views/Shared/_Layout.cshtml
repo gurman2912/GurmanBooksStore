@@ -27,10 +27,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <!--add category link -->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Category" asp-action="Index">Catgory</a>
-                        </li>
                         <!--<li class="nav-item">
                              <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>-->
@@ -40,7 +36,9 @@
                                 Content management
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
+                                <!--add category link -->
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Catgory</a>
+                                <!--<a class="dropdown-item" href="#">Action</a>-->
                                 <a class="dropdown-item" href="#">Action action</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
@@ -76,3 +74,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
