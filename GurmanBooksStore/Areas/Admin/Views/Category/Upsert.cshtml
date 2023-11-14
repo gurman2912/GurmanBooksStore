@@ -7,7 +7,7 @@
 <form method="post">
     <div class="row p-3 border">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @if(Model.Id !=null)
+        @if(Model.Id !=0)
         {
             //edit
             title = "Edit Category";
@@ -29,7 +29,7 @@
                 <div class="col-8 offset-4">
                     @if(Model.Id != 0)
             {
-                <partial name="_EditAndBookToListButton" model="Model.Id" />
+                <partial name="_EditAndBackToListButton" model="Model.Id" />
             }
             else
             {
@@ -42,5 +42,5 @@
 </form>
 
 @section Scripts{ 
-<partial name="_VaildationScriptsPartial" />
+<partial name="_ValidationScriptsPartial" />
 }
