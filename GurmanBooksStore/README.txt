@@ -237,3 +237,15 @@ add void Save() method to IUnitOfWork interface bacause it is not availble in Ca
 add the API call for HTTPDelete in the CategoryController.cs and add delete funtionality in category.js with including the onclick event to the Delete function......
 add Delete(url) function code then test the code by run application.........
 I complete my part2 but create category button is not working....... 
+
+
+
+##############################################
+                     Part-3
+##############################################
+
+2023-11-17
+1356
+Let's start part3.1(Cover Type CRUD)
+create CoverType.cs into .Models project and add id and name same as category.cs 
+
