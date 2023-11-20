@@ -251,3 +251,7 @@ create CoverType.cs into .Models project and add id and name same as category.cs
 add CoverTypeRepository to Repository class and ICoverTypeRepository interface to IRepository
 then add CoverType to UnitOfWork and IUnitOfWork
 
+20-11-2023
+i had error on CoverTypes in CoverTypeRepository.cs on line 24 because i didn't add CoverTypes in ApplicationDbContext.cs file......
+after solve the error, add migration "AddCoverTypeToDb (20231120234922_AddCoverTypeToDb)" and update database........
+
