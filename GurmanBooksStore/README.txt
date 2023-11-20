@@ -248,4 +248,6 @@ I complete my part2 but create category button is not working.......
 1356
 Let's start part3.1(Cover Type CRUD)
 create CoverType.cs into .Models project and add id and name same as category.cs 
+add CoverTypeRepository to Repository class and ICoverTypeRepository interface to IRepository
+then add CoverType to UnitOfWork and IUnitOfWork
 
