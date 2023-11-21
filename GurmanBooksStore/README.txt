@@ -276,3 +276,4 @@ then create ProductContoller, js, index and upsert view same as the coverType an
 2308
 start part-3.2 Product CRUD
 modify the ProductController.cs on line 16, 18, 21 to add images...........
+create a ProductVM.cs  view model to .Model, modify it and install package "Microsoft.AspNetCore.Mvc.ViewFeatures"
