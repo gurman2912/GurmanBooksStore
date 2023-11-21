@@ -272,3 +272,7 @@ apply Required method on "Title", "ISBN" and "Author", create add migration "Add
 2235
 create ProductRepository to Repository and IProductRepository to IRepository and modify the ProductRepository.cs file......
 then create ProductContoller, js, index and upsert view same as the coverType and add into UnitOfWork And IUnitOfWork
+
+2308
+start part-3.2 Product CRUD
+modify the ProductController.cs on line 16, 18, 21 to add images...........
