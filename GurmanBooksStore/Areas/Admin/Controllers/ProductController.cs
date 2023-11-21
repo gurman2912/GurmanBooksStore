@@ -75,7 +75,7 @@ namespace GurmanBooksStore.Areas.Admin.Controllers
                     _unitOfWork.Product.Update(product);
                 }
                 _unitOfWork.Save();
-                return RedirectToAction(nameof(Index));       //to see all the categories
+                return RedirectToAction(nameof(Index));       //to see all the products
             }
             return View(product);
         }
