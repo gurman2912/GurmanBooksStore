@@ -258,4 +258,5 @@ after solve the error, add migration "AddCoverTypeToDb (20231120234922_AddCoverT
 2102
 add CoverType to nav bar in Layout page.......
 add CoverType controller to Area Controller same as the CategoryController.cs
+create Areas/Admin/Views/CoverType/Index.cshtml and Upsert.cshtml, coverType.js javascript file as it the category 
 
