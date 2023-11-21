@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GurmanBook.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231121025124_AddProductToDb")]
+    [Migration("20231121033145_AddProductToDb")]
     partial class AddProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,7 +66,10 @@ namespace GurmanBook.DataAccess.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CoverId")
+                    b.Property<int?>("CoverId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CoverTypeId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -303,9 +306,7 @@ namespace GurmanBook.DataAccess.Migrations
 
                     b.HasOne("GurmanBooks.Models.CoverType", "CoverType")
                         .WithMany()
-                        .HasForeignKey("CoverId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CoverId");
 
                     b.Navigation("Category");
 

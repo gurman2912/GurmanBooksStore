@@ -28,7 +28,7 @@ namespace GurmanBooks.Models
         public Category Category { get; set;}
 
         [Required]
-        public int CoverId { get; set; }  //Foreign Key reference
+        public int CoverTypeId { get; set; }  //Foreign Key reference
         [ForeignKey("CoverId")]
         public CoverType CoverType { get; set;}
 
