@@ -1,7 +1,9 @@
 ﻿using GurmanBook.DataAccess.Repository.IRepository;
 using GurmanBooks.Models;
+using GurmanBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,19 +29,32 @@ namespace GurmanBooksStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)  //action method for upsert
         {
-            Product product = new Product();   //using GurmanBooks.Models
+            ProductVM productVM = new ProductVM()   //using GurmanBooks.Models
+            {
+                Product = new Product(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
+            };
             if (id == null)
             {
                 //this is for create
-                return View(product);
+                return View(productVM);
             }
             //this for the edit
-            product = _unitOfWork.Product.Get(id.GetValueOrDefault());
-            if (product == null)
+            productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+            if (productVM == null)
             {
                 return NotFound();
             }
-            return View(product);
+            return View(productVM);
         }
 
         //use HTTP POST to define the post-action method
