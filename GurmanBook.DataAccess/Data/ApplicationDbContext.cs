@@ -18,5 +18,7 @@ namespace GurmanBooksStore.DataAccess.Data //modify namspace to reflect the proj
 
         public DbSet<CoverType> CoverTypes { get; set; }
 
+        public DbSet<Product> Products { get; set; }  //adding products to the DB
+
     }
 }
