@@ -313,3 +313,7 @@ create images/products folder in wwwroot and download book's cover images from g
 
 2109
 make some changes in SD.cs, CoverTypeController.cs and Upsert file.......
+
+2023-11-23
+1635
+link images means products to home page to add code in Area/Customer/Views/Home/Index.cshtml......
