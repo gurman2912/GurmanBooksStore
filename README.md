@@ -1,4 +1,5 @@
-This book store project is built by using ASP.NET core 5.0 . Book Store project with a focus on individual authentication.
+# Project Overview
+This book store project is built by using ASP.NET core 5.0 . Book Store project with a focus on individual authentication.After done this application, the user should be able to order books online and get good discounts.
 
 # Technologies used
 #### ASP.NET Core 5.0: The framework for building the web application.
