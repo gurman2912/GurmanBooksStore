@@ -1,6 +1,6 @@
 # GurmanBooksStore
 
-﻿# Project Overview
+﻿## Project Overview
 This book store project is built by using ASP.NET core 5.0 . Book Store project with a focus on individual authentication.
 
 # Technologies used
