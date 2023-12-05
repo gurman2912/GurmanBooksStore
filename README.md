@@ -6,7 +6,7 @@ This book store project is built by using ASP.NET core 5.0 . Book Store project 
 
 #### Entity Framework Core: Used for database operations and working with data.
 
-#### Bootstrapwatch Theme : Used for change default theme style 
+#### Bootstrapwatch Theme : Used Minty theme for change default theme style 
 
 #### CSS and JavaScript Links: For structuring the web content and applying custom styling.
 
