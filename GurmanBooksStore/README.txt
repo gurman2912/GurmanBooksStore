@@ -324,3 +324,13 @@ I had problem with  Area/Customer/Views/Home/Index.cshtml file because of code a
 but when i run my application its showing add migration on product(it's is not connecting with database, I update my database but still not working there is also 
 error "Cannot find the object "Products" because it does not exist or you do not have permissions.")
 now i push my changes on gitgub and i will work on my laptop for this....
+
+
+1118
+when work on my laptop it's showing error on brower when i run application 
+error :- An unhandled exception occurred while processing the request.
+NullReferenceException: Object reference not set to an instance of an object.
+AspNetCore.Areas_Customer_Views_Home_Index.ExecuteAsync() in Index.cshtml, line 4
+
+but in the sql server explorer i have all of three table with some entries and my application is also running  and showing everything before putting code in index file  to add product with images in home page but after the changes i had these problem ......
+I don't know why i got this error I am enable to solve this error.....
